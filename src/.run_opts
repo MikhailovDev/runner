@@ -1,0 +1,4 @@
+clang-format: -i
+gcc: -Wall -Werror -Wextra -std=c11 -g
+cppcheck: --verbose --enable=all --template=gcc *.cpp *.h *.c --error-exitcode=1
+valgrind: --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose --error-exitcode=1
